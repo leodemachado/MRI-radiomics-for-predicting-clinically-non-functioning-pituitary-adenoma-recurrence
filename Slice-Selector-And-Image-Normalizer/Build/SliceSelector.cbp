@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SliceSelector"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\General-Sources\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\src\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\src\itkeigen\;CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\;CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\CMake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SliceSelector">
+				<Option output="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/SliceSelector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DITK_IO_FACTORY_REGISTER_MANAGER"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkIOExport_AUTOINIT=2(vtkIOExportOpenGL2,vtkIOExportPDF)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DH5_BUILT_AS_DYNAMIC_LIB"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DDEBUG"/>
+					<Add directory="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/ITKFactoryRegistration"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Watersheds/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/expat"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/expat"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/XMLParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/XMLParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lzma"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lzma"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lz4/vtklz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lz4/vtklz4/lib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/doubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/doubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/doubleconversion/vtkdoubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/XML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/XML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Volume"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Volume"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Annotation"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Annotation"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Modeling"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Modeling"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Widgets"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Widgets"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/eigen"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/eigen"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Fourier"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Fourier"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Extraction"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Extraction"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Style"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Style"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/freetype"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/freetype"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/FreeType"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/FreeType"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/glew"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/glew"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/ComputationalGeometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/ComputationalGeometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/OpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/OpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/tiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/tiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/tiff/vtktiff/libtiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/png"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/png"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/jpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/zlib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/zlib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/ExecutionModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/ExecutionModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Transforms"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Transforms"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/System"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/System"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Misc"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Misc"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/DataModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/DataModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/utf8"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/utf8"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/KWSys"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/KWIML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/KWIML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Image"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Bridge/VtkGlue/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/IO/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/Filtering/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/Core/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Bridge/VTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/TestKernel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/SuperPixel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/SpatialFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/RegistrationMethodsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/RegionGrowing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/QuadEdgeMeshFiltering/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/Metricsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Optimizersv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/MarkovRandomFieldsClassifiers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LevelSetsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LabelVoting/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/libLBFGS/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/KLMRegionGrowing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageNoise/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFusion/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFrequency/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/VTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformMatlab/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformInsightLegacy/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformHDF5/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformFactory/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Stimulate/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/SpatialObjects/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/XML/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Siemens/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/RAW/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/PNG/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/PNG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/PNG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/NRRD/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NrrdIO/src/NrrdIO"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NrrdIO/src/NrrdIO"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/NIFTI/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Meta/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Mesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshVTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshOFF/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshOBJ/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshGifti/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshFreeSurfer/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshBYU/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Voronoi/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MRC/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MINC/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/volume_io/Include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/libsrc2"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/libcommon"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/LSM/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TIFF/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/TIFF/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/TIFF/src/itktiff"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/TIFF/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/JPEG2000/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/OpenJPEG/src/openjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/OpenJPEG/src/openjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/JPEG/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/JPEG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/JPEG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/HDF5/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GIPL/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GE/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/IPL/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GDCM/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/CSV/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Bruker/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/BioRad/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/BMP/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUThresholding/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/GPUPDEDeformable/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/PDEDeformable/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/Common/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/GPUCommon/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUImageFilterBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUAnisotropicSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/GPUFiniteDifference/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/GPUCommon/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GIFTI/src/gifticlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/GDCM/src/gdcm/Source/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/GDCM"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Expat/src/expat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Expat/src/expat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Eigen/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DisplacementField/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DiffusionTensorImage/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Denoising/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/DeformableMesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Deconvolution/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/DICOMParser/src/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/DICOMParser/src/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Convolution/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/FFT/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Colormap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Classifiers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/BiasCorrection/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Polynomials/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/AntiAlias/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LevelSets/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/SignedDistanceFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Optimizers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFeature/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageSources/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageGradient/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Smoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageCompare/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/ImageBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/IO/ImageBase"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/FastMarching/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/QuadEdgeMesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DistanceMap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/NarrowBand/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/BinaryMathematicalMorphology/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/MathematicalMorphology/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/ConnectedComponents/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Thresholding/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/LabelMap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageLabel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageIntensity/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Path/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageStatistics/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/SpatialObjects/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MetaIO/src/MetaIO/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/MetaIO/src/MetaIO/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/ZLIB/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/ZLIB/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Mesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageCompose/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/AnisotropicSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageGrid/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/ImageFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Transform/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Statistics/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/ImageAdaptors/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/CurvatureFlow/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFilterBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/FiniteDifference/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Common/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/Core/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/core"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/vcl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/KWIML/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/KWIML/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Eigen3/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/DoubleConversion/src/double-conversion"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/DoubleConversion/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Infovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Infovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Charts/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Charts/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Legacy"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Legacy"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Domains/Chemistry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Domains/Chemistry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Domains/ChemistryOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Domains/ChemistryOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Parallel/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Parallel/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/FlowPaths"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/FlowPaths"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Generic"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Generic"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/HyperTree"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/HyperTree"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Imaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Imaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/ParallelImaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/ParallelImaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Points"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Points"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Programmable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Programmable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/SMP"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/SMP"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Selection"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Selection"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Texture"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Texture"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Topology"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Topology"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/MetaIO/vtkmetaio"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/MetaIO"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/MetaIO"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Infovis/Layout"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Infovis/Layout"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libproj/vtklibproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj/vtklibproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Geovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Geovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Asynchronous"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Asynchronous"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/pugixml/vtkpugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/pugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/pugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/CityGML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/CityGML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/EnSight"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/EnSight"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/netcdf/vtknetcdf/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/netcdf/vtknetcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/netcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/netcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/exodusII"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/exodusII"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Exodus"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Exodus"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/gl2ps"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/gl2ps"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/GL2PSOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/GL2PSOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Export"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Export"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ExportOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ExportOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu/vtklibharu/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu/vtklibharu/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ExportPDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ExportPDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Import"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Import"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libxml2/vtklibxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/LSDyna"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/LSDyna"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/ogg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/ogg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/theora"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/theora"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Movie"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Movie"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/NetCDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/NetCDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/PLY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/PLY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jsoncpp"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/jsoncpp"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ParallelXML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ParallelXML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/sqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/sqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/SQL"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/SQL"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/SegY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/SegY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/TecplotTable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/TecplotTable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/VeraOut"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/VeraOut"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Video"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Video"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Morphological"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Morphological"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Stencil"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Stencil"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/ContextOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/ContextOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/LOD"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/LOD"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Label"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Label"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/VolumeOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/VolumeOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/doubleconversion/vtkdoubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jpeg/vtkjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/KWSys"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NIFTI/src/nifti/znzlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NIFTI/src/nifti/niftilib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/vcl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/KWSys/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5/vtkhdf5/hl/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5/vtkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/pugixml/vtkpugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/exodusII/vtkexodusII/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/exodusII/vtkexodusII/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/ogg/vtkogg/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/ogg/vtkogg/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/theora/vtktheora/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/theora/vtktheora/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/sqlite/vtksqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/png/vtkpng"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj/vtklibproj/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5/hl/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu/vtklibharu/src/../include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu/vtklibharu/src/../include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jsoncpp/vtkjsoncpp/json"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Eigen3/src/itkeigen/.."/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src/itkeigen/.."/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core/vnl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NIFTI/src/nifti/znzlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NIFTI/src/nifti/niftilib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5/c++/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5/c++/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 SliceSelector"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SliceSelector/fast">
+				<Option output="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/SliceSelector" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DvtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"/>
+					<Add option="-DITK_IO_FACTORY_REGISTER_MANAGER"/>
+					<Add option="-DvtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"/>
+					<Add option="-DvtkIOExport_AUTOINIT=2(vtkIOExportOpenGL2,vtkIOExportPDF)"/>
+					<Add option="-DvtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"/>
+					<Add option="-DvtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"/>
+					<Add option="-DvtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"/>
+					<Add option="-DH5_BUILT_AS_DYNAMIC_LIB"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DDEBUG"/>
+					<Add directory="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/ITKFactoryRegistration"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Watersheds/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/expat"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/expat"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/XMLParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/XMLParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lzma"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lzma"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/lz4/vtklz4"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/lz4/vtklz4/lib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/doubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/doubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/doubleconversion/vtkdoubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/XML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/XML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Volume"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Volume"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Annotation"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Annotation"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Modeling"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Modeling"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Hybrid"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Widgets"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Widgets"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/eigen"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/eigen"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Fourier"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Fourier"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Extraction"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Extraction"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Style"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Style"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/freetype"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/freetype"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/FreeType"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/FreeType"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/glew"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/glew"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/General"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/ComputationalGeometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/ComputationalGeometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Color"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/OpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/OpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Sources"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/tiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/tiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/tiff/vtktiff/libtiff"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/png"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/png"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/jpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/zlib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/zlib"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/ExecutionModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/ExecutionModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Transforms"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Transforms"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/System"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/System"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Misc"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Misc"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/DataModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/DataModel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/utf8"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/utf8"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/KWSys"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/KWIML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/KWIML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Common/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Common/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Image"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Bridge/VtkGlue/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/IO/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/Filtering/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Video/Core/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Bridge/VTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/TestKernel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/SuperPixel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/SpatialFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/RegistrationMethodsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/RegionGrowing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/QuadEdgeMeshFiltering/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/Metricsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Optimizersv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/MarkovRandomFieldsClassifiers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LevelSetsv4/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LabelVoting/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/libLBFGS/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/KLMRegionGrowing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageNoise/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFusion/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFrequency/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/VTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformMatlab/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformInsightLegacy/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformHDF5/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TransformFactory/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Stimulate/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/SpatialObjects/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/XML/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Siemens/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/RAW/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/PNG/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/PNG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/PNG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/NRRD/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NrrdIO/src/NrrdIO"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NrrdIO/src/NrrdIO"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/NIFTI/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Meta/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Mesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshVTK/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshOFF/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshOBJ/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshGifti/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshFreeSurfer/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshBYU/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MeshBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Voronoi/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MRC/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/MINC/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/volume_io/Include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/libsrc2"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc/libcommon"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC/src/libminc"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/LSM/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/TIFF/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/TIFF/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/TIFF/src/itktiff"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/TIFF/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/JPEG2000/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/OpenJPEG/src/openjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/OpenJPEG/src/openjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/JPEG/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/JPEG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/JPEG/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/HDF5/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GIPL/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GE/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/IPL/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/GDCM/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/CSV/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/Bruker/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/BioRad/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/BMP/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUThresholding/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/GPUPDEDeformable/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/PDEDeformable/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/Common/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Registration/GPUCommon/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUImageFilterBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/GPUAnisotropicSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/GPUFiniteDifference/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/GPUCommon/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GIFTI/src/gifticlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/GDCM/src/gdcm/Source/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/GDCM"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Expat/src/expat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Expat/src/expat"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Eigen/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DisplacementField/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DiffusionTensorImage/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Denoising/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/DeformableMesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Deconvolution/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/DICOMParser/src/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/DICOMParser/src/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Convolution/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/FFT/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Colormap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/Classifiers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/BiasCorrection/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Polynomials/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/AntiAlias/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/LevelSets/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/SignedDistanceFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Optimizers/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFeature/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageSources/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageGradient/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Smoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageCompare/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/IO/ImageBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/IO/ImageBase"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/FastMarching/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/QuadEdgeMesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/DistanceMap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/NarrowBand/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/BinaryMathematicalMorphology/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/MathematicalMorphology/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Segmentation/ConnectedComponents/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Thresholding/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/LabelMap/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageLabel/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageIntensity/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/Path/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageStatistics/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/SpatialObjects/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/MetaIO/src/MetaIO/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/MetaIO/src/MetaIO/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/ZLIB/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/ZLIB/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Mesh/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageCompose/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/AnisotropicSmoothing/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageGrid/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/ImageFunction/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Transform/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Numerics/Statistics/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/ImageAdaptors/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/CurvatureFlow/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Filtering/ImageFilterBase/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/FiniteDifference/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/Core/Common/include"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/Core/Common"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/core"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/vcl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/KWIML/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/KWIML/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Eigen3/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/DoubleConversion/src/double-conversion"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/DoubleConversion/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Infovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Infovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Charts/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Charts/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/DICOMParser"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Legacy"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Legacy"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Domains/Chemistry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Domains/Chemistry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Domains/ChemistryOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Domains/ChemistryOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Parallel/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Parallel/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/FlowPaths"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/FlowPaths"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Generic"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Generic"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/HyperTree"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/HyperTree"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Imaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Imaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/ParallelImaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/ParallelImaging"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Points"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Points"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Programmable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Programmable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/SMP"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/SMP"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Selection"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Selection"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Texture"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Texture"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Topology"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Topology"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Filters/Verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Filters/Verdict"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/MetaIO/vtkmetaio"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/MetaIO"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Utilities/MetaIO"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Infovis/Layout"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Infovis/Layout"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libproj/vtklibproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj/vtklibproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libproj"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Geovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Geovis/Core"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/AMR"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Asynchronous"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Asynchronous"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/pugixml/vtkpugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/pugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/pugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/CityGML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/CityGML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/EnSight"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/EnSight"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/netcdf/vtknetcdf/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/netcdf/vtknetcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/netcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/netcdf"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/exodusII"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/exodusII"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Exodus"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Exodus"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/gl2ps"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/gl2ps"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/GL2PSOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/GL2PSOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Export"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Export"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ExportOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ExportOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu/vtklibharu/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu/vtklibharu/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ExportPDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ExportPDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Geometry"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Import"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Import"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libxml2/vtklibxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libxml2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/LSDyna"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/LSDyna"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/MINC"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/ogg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/ogg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/theora"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/theora"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Movie"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Movie"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/NetCDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/NetCDF"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/PLY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/PLY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jsoncpp"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/jsoncpp"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Parallel"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/ParallelXML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/ParallelXML"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/sqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/sqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/SQL"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/SQL"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/SegY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/SegY"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/TecplotTable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/TecplotTable"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/VeraOut"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/VeraOut"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/IO/Video"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/IO/Video"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Math"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Morphological"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Morphological"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Statistics"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Imaging/Stencil"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Imaging/Stencil"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Interaction/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Interaction/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/ContextOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/ContextOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Image"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/LOD"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/LOD"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/Label"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/Label"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Rendering/VolumeOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Rendering/VolumeOpenGL2"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Context2D"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Views/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/Views/Infovis"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/doubleconversion/vtkdoubleconversion"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jpeg/vtkjpeg"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/Utilities/KWSys"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NIFTI/src/nifti/znzlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/NIFTI/src/nifti/niftilib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/vcl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/v3p/netlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/KWSys/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5/vtkhdf5/hl/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/hdf5/vtkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/pugixml/vtkpugixml"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/exodusII/vtkexodusII/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/exodusII/vtkexodusII/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/ogg/vtkogg/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/ogg/vtkogg/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/theora/vtktheora/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/theora/vtktheora/include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/sqlite/vtksqlite"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/png/vtkpng"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libproj/vtklibproj/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/hdf5/vtkhdf5/hl/src"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/ThirdParty/libharu/vtklibharu/src/../include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/libharu/vtklibharu/src/../include"/>
+					<Add directory="/home/leonardo/General-Sources/VTK-8.2.0/BUILD/ThirdParty/jsoncpp/vtkjsoncpp/json"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/Eigen3/src/itkeigen/.."/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src/itkeigen/.."/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/VNL/src/vxl/core/vnl"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NIFTI/src/nifti/znzlib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/NIFTI/src/nifti/niftilib"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5/c++/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/Modules/ThirdParty/HDF5/src/itkhdf5/c++/src"/>
+					<Add directory="/home/leonardo/General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/HDF5/src/itkhdf5/src"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 SliceSelector/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/SliceSelector.cxx">
+			<Option target="SliceSelector"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/ITKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/ITKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/ITKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKAnisotropicSmoothing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKAntiAlias.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKBiasCorrection.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKBinaryMathematicalMorphology.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKClassifiers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKColormap.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKConnectedComponents.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKConvolution.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKCurvatureFlow.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDICOMParser.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDeconvolution.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDeformableMesh.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDenoising.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDiffusionTensorImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDisplacementField.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDistanceMap.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKDoubleConversion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKEigen3.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKExpat.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKFFT.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKFastMarching.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKFiniteDifference.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGDCM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGIFTI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUAnisotropicSmoothing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUFiniteDifference.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUImageFilterBase.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUPDEDeformableRegistration.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPURegistrationCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUSmoothing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGPUThresholding.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKGoogleTest.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKHDF5.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOBMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOBioRad.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOBruker.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOCSV.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOGDCM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOGE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOGIPL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOHDF5.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOIPL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOImageBase.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOJPEG.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOJPEG2000.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOLSM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMINC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMRC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMesh.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshBYU.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshBase.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshFreeSurfer.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshGifti.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshOBJ.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshOFF.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeshVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOMeta.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIONIFTI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIONRRD.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOPNG.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIORAW.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOSiemens.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOSpatialObjects.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOStimulate.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOTIFF.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOTransformBase.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOTransformHDF5.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOTransformInsightLegacy.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOTransformMatlab.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIOXML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageAdaptors.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageCompare.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageCompose.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageFeature.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageFilterBase.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageFrequency.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageFunction.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageFusion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageGradient.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageGrid.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageIntensity.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageLabel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageNoise.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKImageStatistics.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKIntegratedTest.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKJPEG.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKKLMRegionGrowing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKKWIML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKKWSys.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKLIBLBFGS.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKLabelMap.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKLabelVoting.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKLevelSets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKLevelSetsv4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMINC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMarkovRandomFieldsClassifiers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMathematicalMorphology.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMesh.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMetaIO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKMetricsv4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKNIFTI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKNarrowBand.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKNetlib.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKNrrdIO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKOpenJPEG.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKOptimizers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKOptimizersv4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKPDEDeformableRegistration.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKPNG.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKPath.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKPolynomials.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKQuadEdgeMesh.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKQuadEdgeMeshFiltering.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKRegionGrowing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKRegistrationCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKRegistrationMethodsv4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKSignedDistanceFunction.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKSmoothing.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKSpatialFunction.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKSpatialObjects.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKStatistics.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKSuperPixel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKTIFF.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKTestKernel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKThresholding.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKTransform.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKTransformFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVNL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVNLInstantiation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVideoCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVideoFiltering.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVideoIO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVoronoi.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKVtkGlue.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKWatersheds.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/lib/cmake/ITK-5.0/Modules/ITKZLIB.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\lib\cmake\ITK-5.0\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src/itkeigen/ITKInternalEigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\src\itkeigen\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src/itkeigen/ITKInternalEigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\src\itkeigen\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/BUILD/Modules/ThirdParty/Eigen3/src/itkeigen/ITKInternalEigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\BUILD\Modules\ThirdParty\Eigen3\src\itkeigen\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/CMake/ITKModuleAPI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/CMake/UseITK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/CMake/itkImageIOFactoryRegisterManager.h.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/CMake/itkMeshIOFactoryRegisterManager.h.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/ITK-5.0.0/CMake/itkTransformIOFactoryRegisterManager.h.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\ITK-5.0.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/VTKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkChartsCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonColor.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonComputationalGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonDataModel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonExecutionModel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonMath.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonMisc.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonSystem.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkCommonTransforms.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkDICOMParser.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkDomainsChemistry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkDomainsChemistryOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersAMR.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersExtraction.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersFlowPaths.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersGeneral.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersGeneric.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersHybrid.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersHyperTree.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersImaging.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersModeling.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersParallel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersParallelImaging.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersPoints.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersProgrammable.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersSMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersSelection.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersStatistics.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersTexture.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersTopology.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkFiltersVerdict.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkGeovisCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOAMR.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOAsynchronous.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOCityGML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOEnSight.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOExodus.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOExport.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOExportOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOExportPDF.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOGeometry.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOImport.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOInfovis.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOLSDyna.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOLegacy.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOMINC.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOMovie.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIONetCDF.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOPLY.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOParallel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOParallelXML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOSQL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOSegY.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOTecplotTable.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOVeraOut.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOVideo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOXML.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkIOXMLParser.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingColor.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingFourier.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingGeneral.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingHybrid.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingMath.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingMorphological.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingStatistics.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkImagingStencil.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkInfovisCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkInfovisLayout.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkInteractionImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkInteractionStyle.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkInteractionWidgets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkMetaIO.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkParallelCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingAnnotation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingContext2D.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingContextOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingFreeType.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingGL2PSOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingImage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingLOD.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingLabel.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingVolume.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkRenderingVolumeOpenGL2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkViewsContext2D.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkViewsCore.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkViewsInfovis.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkdoubleconversion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkeigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkexodusII.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkexpat.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkfreetype.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkgl2ps.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkglew.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkhdf5.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkjpeg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkjsoncpp.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkkwiml.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtklibharu.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtklibproj.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtklibxml2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtklz4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtklzma.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtknetcdf.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkogg.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkpng.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkpugixml.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtksqlite.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtksys.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtktheora.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtktiff.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkutf8.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkverdict.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/BUILD/lib/cmake/vtk-8.2/Modules/vtkzlib.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\BUILD\lib\cmake\vtk-8.2\Modules\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/CMake/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\CMake\"/>
+		</Unit>
+		<Unit filename="/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/../../../../General-Sources/VTK-8.2.0/CMake/vtkModuleAPI.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\General-Sources\VTK-8.2.0\CMake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

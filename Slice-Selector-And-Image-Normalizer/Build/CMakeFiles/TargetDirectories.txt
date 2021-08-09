@@ -1,0 +1,3 @@
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/CMakeFiles/rebuild_cache.dir
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/CMakeFiles/edit_cache.dir
+/home/leonardo/Desktop/Modulos-Source/Modulos_to_ITK/SliceSelector/Build/CMakeFiles/SliceSelector.dir

@@ -1,4 +1,4 @@
-# MRI-radiomics-for-predicting-clinically-non-functioning-pituitary-tumor-recurrence
+# MRI-radiomics-for-predicting-clinically-non-functioning-pituitary-adenoma-recurrence
 
 This repository contains all the codes and instructions of the experiments related to the reseach entittled 
 "MRI radiomics for the prediction of recurrence in patients with clinically non-functioning pituitary macroadenomas",

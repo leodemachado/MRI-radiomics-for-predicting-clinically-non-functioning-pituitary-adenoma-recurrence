@@ -1,0 +1,11 @@
+,Feature,Stable Value,Recurrent Value,Snedecor Variance,Normality,T-test-IC,T-test-p,Kruskal-Wallis
+48,original_gldm_DependenceNonUniformity,227.034 +- 91.181,408.554 +- 207.634,UNequal,Normal,"[-360.131,-2.909]",0.024,0.006999999999999999
+63,original_firstorder_Energy,2.764e+06 +- 1.346e+06,4.419e+06 +- 1.999e+06,Equal,Normal,"[-3.185e+06,-1.252e+05]",0.016,0.018000000000000002
+85,original_glrlm_RunLengthNonUniformity,234.191 +- 86.865,415.942 +- 188.140,UNequal,Normal,"[-343.959,-19.543]",0.015,0.006
+97,original_glszm_SizeZoneNonUniformity,234.191 +- 86.865,415.942 +- 188.140,UNequal,Normal,"[-343.959,-19.543]",0.015,0.006
+115,wavelet-HH_firstorder_Skewness,-0.217 +- 0.122,-0.051 +- 0.131,Equal,Normal,"[-0.285,-0.046]",0.003,0.006
+116,wavelet-HH_firstorder_Uniformity,0.502 +- 0.002,0.500 +- 3.853e-04,UNequal,Not,"[2.202e-04,0.003]",0.011000000000000001,0.027000000000000003
+117,wavelet-HH_firstorder_Median,1.661e-07 +- 1.353e-07,3.042e-08 +- 6.189e-08,UNequal,Normal,"[4.379e-08,2.276e-07]",0.002,0.008
+126,wavelet-HH_firstorder_Entropy,0.997 +- 0.003,1.000 +- 5.561e-04,UNequal,Not,"[-0.005,-3.167e-04]",0.011000000000000001,0.027000000000000003
+166,wavelet-LH_firstorder_Kurtosis,8.044 +- 3.860,11.865 +- 4.181,Equal,Not,"[-7.611,-0.033]",0.024,0.006
+167,wavelet-LH_firstorder_Mean,-0.337 +- 0.387,0.034 +- 0.243,Equal,Normal,"[-0.699,-0.044]",0.012,0.012
